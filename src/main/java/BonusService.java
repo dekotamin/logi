@@ -4,7 +4,7 @@ public class BonusService {
     long bonus = amount * percent / 100 / 100;
     long limit = 500;
     if (bonus > limit) {
-      bonus = limit;
+      return limit;
     }
     return bonus;
   }
